@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WYZE Dashboard</title>
+  <link rel="stylesheet" href="assets/css/dashboard.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <aside id="sidebar" class="sidebar">
+      <div class="brand">
+        <img src="assets/images/wyze-logo.jpg" alt="WYZE Logo" class="brand-logo" />
+        <span class="brand-name">WYZE</span>
+      </div>
+
+      <nav class="nav">
+        <a href="dashboard.html" class="nav-link active">🏠 Dashboard</a>
+        <a href="tickets.html" class="nav-link">🎫 Tickets</a>
+        <a href="create-ticket.html" class="nav-link">➕ Create Ticket</a>
+        <a href="#" class="nav-link">⚙️ Settings</a>
+        <a href="#" class="nav-link">🚪 Logout</a>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <div class="main">
+      <header class="topbar">
+        <button id="sidebarToggle" class="hamburger" aria-label="Toggle menu">☰</button>
+        <h1 class="page-title">Dashboard</h1>
+        <div class="user">Welcome, Ayobami</div>
+      </header>
+
+      <main class="content">
+        <section class="cards">
+          <article class="card">
+            <h3>Total Tickets</h3>
+            <p class="num">120</p>
+          </article>
+          <article class="card">
+            <h3>Open</h3>
+            <p class="num">18</p>
+          </article>
+          <article class="card">
+            <h3>Resolved</h3>
+            <p class="num">102</p>
+          </article>
+          <article class="card">
+            <h3>Pending</h3>
+            <p class="num">5</p>
+          </article>
+        </section>
+
+        <section class="recent">
+          <h2>Recent Activities</h2>
+          <div class="table-wrap">
+            <table class="table">
+              <thead>
+                <tr><th>ID</th><th>Title</th><th>Status</th><th>Date</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>#1023</td><td>Network issue in office</td><td><span class="badge open">Open</span></td><td>Oct 27, 2025</td></tr>
+                <tr><td>#1018</td><td>Software installation</td><td><span class="badge resolved">Resolved</span></td><td>Oct 25, 2025</td></tr>
+                <tr><td>#1015</td><td>Printer not responding</td><td><span class="badge pending">Pending</span></td><td>Oct 24, 2025</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        © 2025 WYZE IT Support — All rights reserved
+      </footer>
+    </div>
+  </div>
+
+  <script src="assets/js/dashboard.js" defer></script>
+</body>
+</html>

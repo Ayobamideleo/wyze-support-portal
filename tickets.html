@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WYZE | Tickets</title>
+  <link rel="stylesheet" href="assets/css/tickets.css" />
+  <script defer src="assets/js/sidebar.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <img src="assets/images/wyze-logo.jpg" alt="WYZE Logo" class="logo" />
+    <h1>Support Tickets</h1>
+  </header>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+      <ul>
+        <li><a href="dashboard.html"><span>🏠</span> Dashboard</a></li>
+        <li class="active"><a href="tickets.html"><span>🎫</span> Tickets</a></li>
+        <li><a href="#"><span>⚙️</span> Settings</a></li>
+        <li><a href="#"><span>🚪</span> Logout</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-container">
+      <section class="ticket-section">
+        <h2>All Tickets</h2>
+        <div class="ticket-table-container">
+          <table class="ticket-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Subject</th>
+                <th>Status</th>
+                <th>Priority</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#001</td>
+                <td>System Login Issue</td>
+                <td><span class="status open">Open</span></td>
+                <td><span class="priority high">High</span></td>
+                <td>Oct 25, 2025</td>
+              </tr>
+              <tr>
+                <td>#002</td>
+                <td>Email Not Syncing</td>
+                <td><span class="status pending">Pending</span></td>
+                <td><span class="priority medium">Medium</span></td>
+                <td>Oct 24, 2025</td>
+              </tr>
+              <tr>
+                <td>#003</td>
+                <td>Request for Laptop Replacement</td>
+                <td><span class="status closed">Closed</span></td>
+                <td><span class="priority low">Low</span></td>
+                <td>Oct 22, 2025</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <button class="new-ticket-btn">+ Create New Ticket</button>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p>© 2025 WYZE | All Rights Reserved</p>
+  </footer>
+</body>
+</html>

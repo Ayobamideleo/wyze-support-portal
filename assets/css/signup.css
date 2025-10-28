@@ -1,0 +1,88 @@
+/* ========== GLOBAL STYLES ========== */
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ========== SIGNUP CONTAINER ========== */
+.signup-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.logo {
+  width: 120px;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.signup-container h2 {
+  text-align: center;
+  color: #111;
+  margin-bottom: 25px;
+}
+
+/* ========== FORM INPUTS ========== */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #8B0000; /* WYZE deep red */
+  transform: scale(1.03);
+  box-shadow: 0 0 6px rgba(139, 0, 0, 0.3);
+}
+
+/* ========== BUTTON STYLING ========== */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #8B0000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+button:hover {
+  background-color: black;
+  transform: scale(1.05);
+}
+
+/* ========== FOOTER LINKS ========== */
+.footer-links {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.footer-links a {
+  color: #8B0000;
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: black;
+}

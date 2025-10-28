@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WYZE Support Portal - Create Ticket</title>
+  <link rel="stylesheet" href="assets/css/create-ticket.css" />
+  <link rel="icon" type="image/png" href="assets/images/wyze-logo.jpg">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="logo-container">
+      <img src="assets/images/wyze-logo.jpg" alt="WYZE Logo" class="logo">
+      <h1>WYZE Support Portal</h1>
+    </div>
+  </header>
+
+  <!-- ===== Main Content ===== -->
+  <main class="main-content">
+    <h2>Create a New Ticket</h2>
+
+    <form id="createTicketForm" class="ticket-form">
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Enter ticket subject" required>
+      </div>
+
+      <div class="form-group">
+        <label for="category">Category</label>
+        <select id="category" name="category" required>
+          <option value="">-- Select Category --</option>
+          <option value="Hardware">Hardware</option>
+          <option value="Software">Software</option>
+          <option value="Network">Network</option>
+          <option value="Email & Account">Email & Account</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="priority">Priority</label>
+        <select id="priority" name="priority" required>
+          <option value="">-- Select Priority --</option>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" name="description" rows="4" placeholder="Describe the issue..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">Submit Ticket</button>
+    </form>
+
+    <!-- ✅ Modal for success message -->
+    <div id="successModal" class="modal">
+      <div class="modal-content">
+        <h3>✅ Ticket Created Successfully</h3>
+        <p>Your ticket has been submitted and will be reviewed by the IT support team.</p>
+        <button id="closeModal" class="btn-close">Close</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <p>© 2025 WYZE IT Support Portal. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/create-ticket.js"></script>
+</body>
+</html>
